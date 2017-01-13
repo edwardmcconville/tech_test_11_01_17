@@ -29,17 +29,43 @@ p{margin: 0 0 20px 0; line-height: 200%;}
   width: 100%;
 }
 
+#social{
+	position: absolute;
+	top: 0; left: 0;
+	padding: 10px;
+	z-index: 9999;
+}
+
+#social img{
+	margin: 0 5px 0 0;
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
+}
+
+#social #facebook{
+	background: #256299;
+}
+
+#social #twitter{
+	background: #378bb7;
+}
+
+#social #instagram{
+	background: #246485;
+}
+
 /* vertical-centered text */
 .text-vcenter {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+	  display: table-cell;
+	  text-align: center;
+	  vertical-align: middle;
+	  max-width: 100%;
 }
 .text-vcenter h1 {
   color: #fff;
   font-size: 2.7em;
   font-weight: 700;
-  width: 600px;
   max-width: 100%;
   margin: 0px auto ;
   padding: 0 0 20px;
@@ -64,7 +90,17 @@ p{margin: 0 0 20px 0; line-height: 200%;}
 
 #logo{margin: 0 auto 50px;}
 
-#about {
+#about #top-line {
+	width: 270px;
+	margin: 0;
+	padding: 20px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 5px;
+	line-height: 150%;
+	text-transform: uppercase;
+	color: #286191;
+	border-top: 4px solid #286191;
 }
 
 #services {
@@ -96,14 +132,7 @@ p{margin: 0 0 20px 0; line-height: 200%;}
 
 #information {
   background: url(../images/clients_bg.jpg) no-repeat center center fixed; 
-  display: table;
-  height: 800px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 #information .panel {
   opacity: 0.85;
@@ -111,6 +140,7 @@ p{margin: 0 0 20px 0; line-height: 200%;}
 #information .client-logo img{
 	margin:  0 0 20px;
 	background: #213241;
+	max-width: 100%;
 }
 
 #information h2{
@@ -137,9 +167,21 @@ p{margin: 0 0 20px 0; line-height: 200%;}
 	margin: 0 0 15px 0;
 	padding: 10px;
 }
-#contact-form input[type="submit"]{border: 0; width: 100%; padding: 10px; background: #286191; color: #fff;}
+#contact-form input[type="submit"]{
+	border: 0;
+	width: 100%;
+	padding: 10px;
+	background: #286191;
+	color: #fff;
+}
 footer {
   background: #0d171f;
   padding: 30px 0;
   color: #fff;
+}
+
+@media (min-width: 767px) {
+	.text-vcenter h1 {
+	  width: 600px;
+	}
 }
