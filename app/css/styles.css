@@ -1,9 +1,6 @@
 .testing {
   width: 71.42857%; }
 
-body {
-  background: red; }
-
 /* ============================================================================================== 
 This copyright notice must be kept untouched in the stylesheet at all times.
 The original version of this stylesheet and the associated (x)html 
@@ -30,10 +27,14 @@ html, body {
   vertical-align: middle; }
 
 .text-vcenter h1 {
-  font-size: 4.5em;
+  color: #fff;
+  font-size: 2.7em;
   font-weight: 700;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border: 1px solid #fff; }
 
 /* additional sections */
 #home {
@@ -46,6 +47,9 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+#logo {
+  margin: 0 auto 40px; }
 
 #services {
   background-color: #306d9f;
